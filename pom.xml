@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>Javabase</module>
+		<module>JavaWeb</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

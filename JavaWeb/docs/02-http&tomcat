@@ -1,0 +1,85 @@
+## URI、URL和URN
+
+[编辑](javascript:;)
+
+[统一资源定位符](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6/4438100)（Uniform Resource Locator，URL）,[统一资源名称](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%90%8D%E7%A7%B0/4437154)（Uniform Resource Name，URN）是URI的子集。
+
+Web上地址的基本形式是URI,它有两种形式：
+
+一种是URL，这是目前URI的最普遍形式。
+
+另一种就是URN，这是URL的一种更新形式，URN不依赖于位置，并且有可能减少失效连接的个数。但是其流行还需假以时日，因为它需要更精密软件的支持。
+
+### URI与URL
+
+URL是Uniform Resource Locator的缩写，译为"统一资源定位符"。URL是一种URI，它标识一个互联网[资源](https://baike.baidu.com/item/%E8%B5%84%E6%BA%90)，并指定对其进行操作或获取该资源的方法。可能通过对主要访问手段的描述，也可能通过网络“位置”进行标识。例如，http://www.wikipedia.org/这个URL，标识一个特定资源（[首页](https://baike.baidu.com/item/%E9%A6%96%E9%A1%B5)）并表示该资源的某种形式（例如以编码字符表示的，首页的[HTML](https://baike.baidu.com/item/HTML)代码）是可以通过[HTTP](https://baike.baidu.com/item/HTTP)协议从www.wikipedia.org这个网络主机获得的。主要用在各种WWW客户程序和[服务器](https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8)程序上，特别是著名的Mosaic。采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。
+
+目前最大的缺点是当信息资源的存放地点发生变化时，必须对URL作相应的改变。因此人们正在研究新的信息资源表示方法，例如：URI(Universal Resource Identifier)即"通用资源标识" <sup>[2]</sup>  、URN（Uniform Resource Name）即"统一资源名"和URC（Uniform Resource Citation）即"统一资源引用符"等。
+
+URI还在进一步的研究当中。研究的方向就是弥补URL的缺点。
+
+
+### URI与URN
+
+URI可被视为定位符（URL），名称（URN）或两者兼备。统一资源名（URN）如同一个人的名称，而[统一资源定位符](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6)（URL）代表一个人的住址。换言之，URN定义某事物的身份，而URL提供查找该事物的方法。URN仅用于命名，而不指定地址。
+
+用于[标识](https://baike.baidu.com/item/%E6%A0%87%E8%AF%86)唯一书目的ISBN系统是一个典型的URN使用范例。例如，ISBN 0486275574(urn:isbn:0-486-27557-4)无二义性地标识出莎士比亚的戏剧《罗密欧与朱丽叶》的某一特定版本。为获得该资源并阅读该书，人们需要它的位置，也就是一个URL地址。在类Unix操作系统中，一个典型的URL地址可能是一个[文件目录](https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95)，例如file:///home/username/RomeoAndJuliet.pdf。该URL[标识](https://baike.baidu.com/item/%E6%A0%87%E8%AF%86)出存储于本地硬盘中的电子书文件。因此，URL和URN有着互补的作用。
+
+URN是基于某[名字空间](https://baike.baidu.com/item/%E5%90%8D%E5%AD%97%E7%A9%BA%E9%97%B4)通过名称指定资源的URI。人们可以通过URN来指出某个资源，而无需指出其位置和获得方式。资源无需是基于互联网的。例如，URNurn:ISBN0-395-36341-1 指定标识系统（即国际标准书号[ISBN](https://baike.baidu.com/item/ISBN)）和某资源在该系统中的唯一表示的URI。它可以允许人们在不指出其位置和获得方式的情况下谈论这本书。
+## URI格式
+
+[编辑](javascript:;)
+
+表示指定的 URI，要使用涵盖全部必要信息的绝对 URI、绝对 URL 以及相对 URL。相对 URL，是指从浏览器中基本 URI 处指定的 URL，形如 /image/logo.gif。
+
+URI格式由URI协议名（例如[http](https://baike.baidu.com/item/http)、[ftp](https://baike.baidu.com/item/ftp)、[mailto](https://baike.baidu.com/item/mailto)、file），一个[冒号](https://baike.baidu.com/item/%E5%86%92%E5%8F%B7)，和协议对应的内容所构成。特定的协议定义了协议内容的语法和[语义](https://baike.baidu.com/item/%E8%AF%AD%E4%B9%89)，而所有的协议都必须遵循一定的URI文法通用规则，亦即为某些专门目的保留部分特殊字符。URI文法同时也就各种原因对协议内容加以其他的限制，例如，保证各种分层协议之间的协同性。百分号编码也为URI提供附加信息。
+
+URL的格式由下列三部分组成:，第一部分是协议（或称为服务方式）；第二部分是存有该资源的主机IP地址（有时也包括端口号）；第三部分是主机资源的具体地址。
+
+具体URI的格式如下：
+
+[协议名]://[用户名]:[密码]@[服务器地址]:[服务器端口号]/[路径]?[查询字符串]#[片段ID] <sup>[4]</sup> 
+
+### 登录信息（用户名：密码）
+
+指定用户名和密码作为从服务器端获取资源时必要的登录信息（身份认证）。此项是可选项。
+
+### 服务器地址
+
+使用绝对 URI 必须指定待访问的服务器地址。地址可以是类似 hackr.jp 这种 DNS 可解析的名称，或是 192.168.1.1 这类 IPv4 地址 名，还可以是 [0:0:0:0:0:0:0:1] 这样用方括号括起来的 IPv6 地址名。
+
+### 服务器端口号
+
+指定服务器连接的网络端口号。此项也是可选项，若用户省略则自动使用默认端口号。
+
+### 带层次的文件路径
+
+指定服务器上的文件路径来定位特指的资源。这与 UNIX 系统的文件目录结构相似。
+
+### 查询字符串
+
+针对已指定的文件路径内的资源，可以使用查询字符串传入任意参数。此项可选。
+
+### 片段标识符
+
+使用片段标识符通常可标记出已获取资源中的子资源（文档内的某个位置）。但在 RFC 中并没有明确规定其使用方法。该项也为可选项。
+
+# Tomcat
+Tomcat简单的说就是一个运行JAVA的网络服务器，底层是Socket的一个程序，它也是JSP和Serlvet的一个容器。
+![ANtom.png](http://5b0988e595225.cdn.sohucs.com/images/20190308/0829d9e1855f4707bf40aa93295daecf.jpeg)
+tomcat结构目录
+![tom2](http://5b0988e595225.cdn.sohucs.com/images/20190308/0ac8bbf08d51433385f774e83de10188.jpeg)
+目录的简单介绍
+
+bin：启动和关闭tomcat的bat文件
+conf：配置文件
+server.xml该文件用于配置server相关的信息，比如tomcat启动的端口号，配置主机(Host)
+web.xml文件配置与web应用（web应用相当于一个web站点）
+tomcat-user.xml配置用户名密码和相关权限.
+lib：该目录放置运行tomcat运行需要的jar包
+logs：存放日志，当我们需要查看日志的时候，可以查询信息
+webapps：放置我们的web应用
+work工作目录：该目录用于存放jsp被访问后生成对应的server文件和.class文件
+webapps目录的详细说明
+
+在webapps中建立了web1目录，下面放置我们的html文件，jsp文件，图片等等，则web1就被当做web应用管理起来
