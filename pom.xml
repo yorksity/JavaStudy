@@ -6,6 +6,7 @@
 	<modules>
 		<module>Javabase</module>
 		<module>JavaWeb</module>
+		<module>JavaParallel</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
